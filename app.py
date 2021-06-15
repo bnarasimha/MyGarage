@@ -8,7 +8,14 @@ def index():
     return render_template('index.html', Urls=getUrls())
 
 def getUrls():
-    urls = {"jenkinsUrl" : getJenkinsUrl(), "blogUrl" : getBlogUrl(), "flipItApiUrl" : getFlipItApiUrl()}
+    urls = {"jenkinsUrl" : getJenkinsUrl(), 
+            "blogUrl" : getBlogUrl(), 
+            "flipItApiUrl" : getFlipItApiUrl(),
+            "scrumGuideUrl" : getScrumGuideUrl(),
+            "flipItUrl" : getFlipItUrl(),
+            "codeSnippetsUrl" : getCodeSnippetsUrl(),
+            "resumeUrl" : getResumeUrl()
+    }
     return urls
 
 def getJenkinsUrl():
@@ -20,6 +27,17 @@ def getBlogUrl():
 def getFlipItApiUrl():
     return FLIPITAPI_URL
 
+def getScrumGuideUrl():
+    return SCRUM_GUIDE_URL
+
+def getFlipItUrl():
+    return FLIPIT_URL 
+
+def getCodeSnippetsUrl():
+    return CODESNIPPETS_URL
+
+def getResumeUrl():
+    return RESUME_URL
 
 if __name__ == "__main__":
     app.run(host="localhost", port=5000)
