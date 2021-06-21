@@ -2,52 +2,53 @@ import unittest
 import app
 import constants
 
-def test_getJenkinsUrl(self):
-    #Arrange
-    expectedUrl = constants.JENKINS_URL
+class testapp(unittest.TestCase):
+    def test_getJenkinsUrl(self):
+        #Arrange
+        expectedUrl = constants.JENKINS_URL
 
-    #Act
-    actualUrl = app.getJenkinsUrl()
+        #Act
+        actualUrl = app.getJenkinsUrl()
 
-    #Assert
-    self.assertEqual(expectedUrl, actualUrl)
+        #Assert
+        self.assertEqual(expectedUrl, actualUrl)
 
-def test_getBlogUrl(self):
-    #Arrange
-    expectedUrl = constants.BLOG_URL
+    def test_getBlogUrl(self):
+        #Arrange
+        expectedUrl = constants.BLOG_URL
 
-    #Act
-    actualUrl = app.getBlogUrl()
+        #Act
+        actualUrl = app.getBlogUrl()
 
-    #Assert
-    self.assertEqual(expectedUrl, actualUrl)
+        #Assert
+        self.assertEqual(expectedUrl, actualUrl)
 
-def test_getFlipItApiUrl(self):
-    #Arrange
-    expectedUrl = constants.FLIPITAPI_URL
+    def test_getFlipItApiUrl(self):
+        #Arrange
+        expectedUrl = constants.FLIPITAPI_URL
 
-    #Act
-    actualUrl = app.getFlipItApiUrl()
+        #Act
+        actualUrl = app.getFlipItApiUrl()
 
-    #Assert
-    self.assertEqual(expectedUrl, actualUrl)
+        #Assert
+        self.assertEqual(expectedUrl, actualUrl)
 
-def test_getScrumGuideUrl(self):
-    #Arrange
-    expectedUrl = constants.SCRUM_GUIDE_URL
+    def test_getScrumGuideUrl(self):
+        #Arrange
+        expectedUrl = constants.SCRUM_GUIDE_URL
 
-    #Act
-    actualUrl = app.getScrumGuideUrl()
+        #Act
+        actualUrl = app.getScrumGuideUrl()
 
-    #Assert
-    self.assertEqual(expectedUrl, actualUrl)
+        #Assert
+        self.assertEqual(expectedUrl, actualUrl)
 
-def test_getFlipItUrl(self):
-    #Arrange
-    expectedUrl = constants.FLIPIT_URL
+    def test_getFlipItUrl(self):
+        #Arrange
+        expectedUrl = constants.FLIPIT_URL
 
-    #Act
-    actualUrl = app.getFlipItUrl()
+        #Act
+        actualUrl = app.getFlipItUrl()
 
-    #Assert
-    self.assertEqual(expectedUrl, actualUrl)
+        #Assert
+        self.assertEqual(expectedUrl, actualUrl)

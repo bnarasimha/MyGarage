@@ -1,23 +1,3 @@
-# import unittest
-# from selenium import webdriver
-# from chromedriver_py import binary_path 
-
-# class testMyGarage(unittest.TestCase):
-#     def setup(self):
-#         self.driver = webdriver.Chrome(executable_path=binary_path)
-    
-#     def test_MyTools(self):
-#         self.driver.get("http://localhost:5000")
-#         elem = self.driver.find_element_by_id("mytools")
-#         self.assertIsNotNone(elem)
-
-#         #assert "Python" in driver.title
-
-#     if __name__ == '__main__':
-#         unittest.main()
-
-
-
 # import all required frameworks
 import unittest
 from selenium import webdriver
