@@ -1,5 +1,5 @@
 pipeline {
-    agent any 
+    agent { label 'awsec2' }
 
     stages {
         stage('Build') {
