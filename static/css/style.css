@@ -1,39 +1,9 @@
 .siteHeader {
     border: 2px #eee solid;
-    color: #66FCF0;
+    color: whitesmoke;
     text-align: center;
     padding: 10px;
-    background-color: #1F2833;
+    background-color: #343A40;
     border-radius: 5px;
     margin-bottom: 10px;
-}
-
-.panel{
-    background-color: #1F2833;
-    color: #66FCF0;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 2px;
-    height: 100%;
-    padding-left: 5px;
-}
-
-.rowMargin{
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
-
-.panelHeader{
-    text-decoration: underline;
-    font-weight: bold;
-}
-.rowContent{
-    text-align: left;
-    word-wrap: break-word;
-}
-
-.rowHeader{
-    text-align: left;
-    text-decoration: underline;
 }
