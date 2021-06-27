@@ -1,6 +1,6 @@
-JENKINS_URL = "http://65.0.251.132:8080"
+JENKINS_URL = "http://ec2-65-0-251-132.ap-south-1.compute.amazonaws.com:8080"
 BLOG_URL = "https://thecodeshell.wordpress.com"
-FLIPITAPI_URL = "http://65.0.251.132:4000"
+FLIPITAPI_URL = "http://ec2-65-0-251-132.ap-south-1.compute.amazonaws.com:4000"
 SCRUM_GUIDE_URL = "https://play.google.com/store/apps/details?id=scrum.guide"
 FLIPIT_URL = "https://play.google.com/store/apps/details?id=flip.it"
 CODESNIPPETS_URL = "https://codesnippets.thecodeshell.in"
