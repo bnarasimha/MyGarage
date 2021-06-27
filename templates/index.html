@@ -1,62 +1,56 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1 class="siteHeader">{% block title %}Narasimha's Garage{% endblock %} </h1>
-
-    <div>
-        <div class="row">
-            <div class="col-4">
-                <div class="panel" id="mytools">
-                    <div class="panelHeader">My Tools</div>
+    <h1 class="siteHeader">{% block title %}My Garage{% endblock %} </h1>
+        <div class="card-deck">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header">My Tools</div>
+                <div class="card-body">
+                    <h5 class="card-title">Jenkins</h5>
+                    <div class="card-text"><a target="_blank" href="{{ Urls.jenkinsUrl }}">{{ Urls.jenkinsUrl }}</a></div>
+                </div>
+            </div>        
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header">My Mobile Apps</div>
+                <div class="card-body">
+                    <h5 class="card-title">Scrum Guide</h5>
+                    <div class="card-text"><a target="_blank" href="{{ Urls.scrumGuideUrl }}">{{ Urls.scrumGuideUrl }}</a></div>
                     <br/>
-                    <div class="rowHeader">Jenkins</div>
-                    <div class="rowContent"><a target="_blank" href="{{ Urls.jenkinsUrl }}">{{ Urls.jenkinsUrl }}</a></div>
+                    <h5 class="card-title">FlipIt</h5>
+                    <div class="card-text"><a target="_blank" href="{{ Urls.flipItUrl }}">{{ Urls.flipItUrl }}</a></div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="panel">
-                    <div class="panelHeader">Mobile Apps</div>
-                    <br/>
-                    <div class="rowHeader">Scrum Guide</div>
-                    <div class="rowContent"><a target="_blank" href="{{ Urls.scrumGuideUrl }}">{{ Urls.scrumGuideUrl }}</a></div>
-                    <br/>
-                    <div class="rowHeader">FlipIt</div>
-                    <div class="rowContent"><a target="_blank" href="{{ Urls.flipItUrl }}">{{ Urls.flipItUrl }}</a></div>
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header">Blogs/Articles</div>
+                <div class="card-body">
+                    <h5 class="card-title">My Blog</h5>
+                    <div class="card-text"><a target="_blank" href="https://thecodeshell.wordpress.com">https://thecodeshell.wordpress.com</a></div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="panel">
-                    <div class="panelHeader">Blog</div>
-                    <br/>
-                    <div class="rowContent"><a target="_blank" href="https://thecodeshell.wordpress.com">https://thecodeshell.wordpress.com</a></div>
-                </div>
-            </div>
-        </div> 
-        <br/>
-        <div class="row">   
-            <div class="col-4">
-                <div class="panel">
-                    <div class="panelHeader">APIs</div>
-                    <br/>
-                    <div class="rowHeader">FlipIt Api</div>
-                    <div class="rowContent"><a target="_blank" href="{{ Urls.flipItApiUrl }}">{{ Urls.flipItApiUrl }}</a></div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="panel">
-                    <div class="panelHeader">Web Apps</div>
-                    <br/>
-                    <div class="rowHeader">Code Snippets</div>
-                    <div class="rowContent"><a target="_blank" href="{{ Urls.codeSnippetsUrl }}">{{ Urls.codeSnippetsUrl }}</a></div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="panel">
-                    <div class="panelHeader">Resume</div>
-                    <br/>
-                    <div class="rowContent"><a target="_blank" href="{{ Urls.resumeUrl }}">{{ Urls.resumeUrl }}</a></div>
-                </div>
-            </div>
+            </div>        
         </div>
-    </div>
+
+        <div class="card-deck">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header">APIs</div>
+                <div class="card-body">
+                    <h5 class="card-title">FlipIt API</h5>
+                    <div class="card-text"><a target="_blank" href="{{ Urls.flipItApiUrl }}">{{ Urls.flipItApiUrl }}</a></div>
+                </div>
+            </div>        
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header">Web Apps</div>
+                <div class="card-body">
+                    <h5 class="card-title">Code Snippets</h5>
+                    <div class="card-text"><a target="_blank" href="{{ Urls.codeSnippetsUrl }}">{{ Urls.codeSnippetsUrl }}</a></div>
+                </div>
+            </div>        
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header">Resume</div>
+                <div class="card-body">
+                    <h5 class="card-title">My Resume</h5>
+                    <div class="card-text"><a target="_blank" href="{{ Urls.resumeUrl }}">{{ Urls.resumeUrl }}</a></div>
+                </div>
+            </div>        
+        </div>
+
 {% endblock %}
