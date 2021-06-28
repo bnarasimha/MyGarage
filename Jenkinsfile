@@ -10,7 +10,7 @@ pipeline {
         stage('Code Analysis') {
             steps {
                 withSonarQubeEnv('Sonar') {
-                sh 'mvn clean package sonar:sonar'
+                // sh 'mvn clean package sonar:sonar'
               }
             }
         }
