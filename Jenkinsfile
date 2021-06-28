@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             steps{
                 sh 'sudo cp -r /var/lib/jenkins/workspace/MyGarage /home/ubuntu/WebApps/MyGarage'
-                sh 'systemctl restart mygarage'
+                sh 'sudo systemctl restart mygarage'
             }
         }
     }
