@@ -14,11 +14,14 @@ pipeline {
               }
             }
         }
-        // stage('Quality Gate') {
-        //     steps {
-        //         waitForQualityGate abortPipeline: True
-        //     }
-        // }
+        stage('Quality Gate') {
+            steps {
+                timeout(time: 1, unit: 'HOURS') {
+                    // Parameter indicates whether to set pipeline to UNSTABLE if Quality Gate fails
+                    // true = set pipeline to UNSTABLE, false = don't
+                    waitForQualityGate abortPipeline: true
+            }
+        }
         stage('Unit Tests') { 
             steps {
                 sh 'python3 -m unittest tests/unittests/testapp.py'
