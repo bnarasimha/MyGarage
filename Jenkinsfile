@@ -14,6 +14,11 @@ pipeline {
               }
             }
         }
+        stage('Quality Gate') {
+            steps {
+                waitForQualityGate abortPipeline: True
+            }
+        }
         stage('Unit Tests') { 
             steps {
                 sh 'python3 -m unittest tests/unittests/testapp.py'
