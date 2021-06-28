@@ -7,6 +7,13 @@ pipeline {
                 sh 'pip install -r requirements.txt'
             }
         }
+        stage('Code Analysis') {
+            steps {
+                withSonarQubeEnv('Sonar') {
+                sh 'mvn clean package sonar:sonar'
+              }
+            }
+        }
         stage('Unit Tests') { 
             steps {
                 sh 'python3 -m unittest tests/unittests/testapp.py'
