@@ -13,7 +13,7 @@ pipeline {
             }
             steps {
                 withSonarQubeEnv('Sonar') {
-                    sh "${scannerHome}/bin/sonar-scanner"
+                    sh "${scannerHome}/bin/sonar-scanner -D sonar.projectKey=bnarasimha_MyGarage -D sonar.organization=bnarasimha"
               }
             }
         }
