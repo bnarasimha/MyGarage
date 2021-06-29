@@ -25,7 +25,7 @@ pipeline {
         stage('Deploy') {
             steps{
                 sh 'pip install wheel'
-                sh 'python setup.py bdist_wheel'
+                sh 'python3 setup.py bdist_wheel'
                 // sh 'sudo cp -r /var/lib/jenkins/workspace/MyGarage /home/ubuntu/WebApps/'
                 // sh 'sudo systemctl restart mygarage'
             }
