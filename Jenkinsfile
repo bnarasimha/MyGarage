@@ -8,22 +8,15 @@ pipeline {
             }
         }
         stage('Code Analysis') {
+            environment {
+                scannerHome = tool 'SonarQubeScanner'
+            }
             steps {
                 withSonarQubeEnv('Sonar') {
-                    sh 'mvn clean package sonar:sonar'
+                    sh "${scannerHome}/bin/sonar-scanner"
               }
             }
         }
-        // stage('Code Analysis') {
-        //     environment {
-        //         scannerHome = tool 'SonarQubeScanner'
-        //     }
-        //     steps {
-        //         withSonarQubeEnv('Sonar') {
-        //             sh "${scannerHome}/bin/sonar-scanner"
-        //       }
-        //     }
-        // }
         // stage('Quality Gate') {
         //     steps {
         //        timeout(time: 1, unit: 'HOURS') {
